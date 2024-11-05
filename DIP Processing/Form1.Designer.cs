@@ -55,10 +55,12 @@
             // 
             // menuStrip1
             // 
+            menuStrip1.ImageScalingSize = new Size(20, 20);
             menuStrip1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(1114, 24);
+            menuStrip1.Padding = new Padding(7, 3, 0, 3);
+            menuStrip1.Size = new Size(1273, 30);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -66,51 +68,54 @@
             // 
             fileToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { fileToolStripMenuItem1, openToolStripMenuItem, saveToolStripMenuItem });
             fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            fileToolStripMenuItem.Size = new Size(37, 20);
+            fileToolStripMenuItem.Size = new Size(46, 24);
             fileToolStripMenuItem.Text = "File";
             // 
             // fileToolStripMenuItem1
             // 
             fileToolStripMenuItem1.Name = "fileToolStripMenuItem1";
-            fileToolStripMenuItem1.Size = new Size(103, 22);
+            fileToolStripMenuItem1.Size = new Size(128, 26);
             fileToolStripMenuItem1.Text = "File";
             // 
             // openToolStripMenuItem
             // 
             openToolStripMenuItem.Name = "openToolStripMenuItem";
-            openToolStripMenuItem.Size = new Size(103, 22);
+            openToolStripMenuItem.Size = new Size(128, 26);
             openToolStripMenuItem.Text = "Open";
             openToolStripMenuItem.Click += openToolStripMenuItem_Click;
             // 
             // saveToolStripMenuItem
             // 
             saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            saveToolStripMenuItem.Size = new Size(103, 22);
+            saveToolStripMenuItem.Size = new Size(128, 26);
             saveToolStripMenuItem.Text = "Save";
             saveToolStripMenuItem.Click += saveToolStripMenuItem_Click;
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(63, 127);
+            pictureBox1.Location = new Point(72, 169);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(333, 295);
+            pictureBox1.Size = new Size(381, 393);
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(644, 129);
+            pictureBox2.Location = new Point(525, 169);
+            pictureBox2.Margin = new Padding(3, 4, 3, 4);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(333, 295);
+            pictureBox2.Size = new Size(381, 393);
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;
             // 
             // basicCopy
             // 
-            basicCopy.Location = new Point(449, 129);
+            basicCopy.Location = new Point(951, 182);
+            basicCopy.Margin = new Padding(3, 4, 3, 4);
             basicCopy.Name = "basicCopy";
-            basicCopy.Size = new Size(115, 37);
+            basicCopy.Size = new Size(131, 49);
             basicCopy.TabIndex = 3;
             basicCopy.Text = "Basic Copy";
             basicCopy.UseVisualStyleBackColor = true;
@@ -118,9 +123,10 @@
             // 
             // greyScale
             // 
-            greyScale.Location = new Point(449, 186);
+            greyScale.Location = new Point(1100, 182);
+            greyScale.Margin = new Padding(3, 4, 3, 4);
             greyScale.Name = "greyScale";
-            greyScale.Size = new Size(115, 37);
+            greyScale.Size = new Size(131, 49);
             greyScale.TabIndex = 4;
             greyScale.Text = "GreyScale";
             greyScale.UseVisualStyleBackColor = true;
@@ -128,9 +134,10 @@
             // 
             // colorInversion
             // 
-            colorInversion.Location = new Point(449, 241);
+            colorInversion.Location = new Point(951, 239);
+            colorInversion.Margin = new Padding(3, 4, 3, 4);
             colorInversion.Name = "colorInversion";
-            colorInversion.Size = new Size(115, 37);
+            colorInversion.Size = new Size(131, 49);
             colorInversion.TabIndex = 5;
             colorInversion.Text = "Color Inversion";
             colorInversion.UseVisualStyleBackColor = true;
@@ -138,9 +145,10 @@
             // 
             // histogram
             // 
-            histogram.Location = new Point(449, 301);
+            histogram.Location = new Point(1100, 239);
+            histogram.Margin = new Padding(3, 4, 3, 4);
             histogram.Name = "histogram";
-            histogram.Size = new Size(115, 37);
+            histogram.Size = new Size(131, 49);
             histogram.TabIndex = 6;
             histogram.Text = "Histogram";
             histogram.UseVisualStyleBackColor = true;
@@ -148,9 +156,10 @@
             // 
             // sepia
             // 
-            sepia.Location = new Point(449, 375);
+            sepia.Location = new Point(951, 296);
+            sepia.Margin = new Padding(3, 4, 3, 4);
             sepia.Name = "sepia";
-            sepia.Size = new Size(115, 37);
+            sepia.Size = new Size(131, 49);
             sepia.TabIndex = 7;
             sepia.Text = "Sepia";
             sepia.UseVisualStyleBackColor = true;
@@ -158,17 +167,19 @@
             // 
             // pictureBox3
             // 
-            pictureBox3.Location = new Point(344, 559);
+            pictureBox3.Location = new Point(72, 631);
+            pictureBox3.Margin = new Padding(3, 4, 3, 4);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(333, 295);
+            pictureBox3.Size = new Size(381, 393);
             pictureBox3.TabIndex = 8;
             pictureBox3.TabStop = false;
             // 
             // loadImage
             // 
-            loadImage.Location = new Point(386, 473);
+            loadImage.Location = new Point(951, 392);
+            loadImage.Margin = new Padding(3, 4, 3, 4);
             loadImage.Name = "loadImage";
-            loadImage.Size = new Size(115, 37);
+            loadImage.Size = new Size(131, 49);
             loadImage.TabIndex = 9;
             loadImage.Text = "Open Image";
             loadImage.UseVisualStyleBackColor = true;
@@ -176,9 +187,10 @@
             // 
             // subtract
             // 
-            subtract.Location = new Point(386, 516);
+            subtract.Location = new Point(951, 459);
+            subtract.Margin = new Padding(3, 4, 3, 4);
             subtract.Name = "subtract";
-            subtract.Size = new Size(115, 37);
+            subtract.Size = new Size(131, 49);
             subtract.TabIndex = 10;
             subtract.Text = "Subtract";
             subtract.UseVisualStyleBackColor = true;
@@ -186,9 +198,10 @@
             // 
             // openBackground
             // 
-            openBackground.Location = new Point(516, 473);
+            openBackground.Location = new Point(1088, 392);
+            openBackground.Margin = new Padding(3, 4, 3, 4);
             openBackground.Name = "openBackground";
-            openBackground.Size = new Size(115, 37);
+            openBackground.Size = new Size(131, 49);
             openBackground.TabIndex = 11;
             openBackground.Text = "Open Background";
             openBackground.UseVisualStyleBackColor = true;
@@ -196,9 +209,10 @@
             // 
             // loadBackground
             // 
-            loadBackground.Location = new Point(516, 516);
+            loadBackground.Location = new Point(1088, 459);
+            loadBackground.Margin = new Padding(3, 4, 3, 4);
             loadBackground.Name = "loadBackground";
-            loadBackground.Size = new Size(115, 37);
+            loadBackground.Size = new Size(131, 49);
             loadBackground.TabIndex = 12;
             loadBackground.Text = "Load Background";
             loadBackground.UseVisualStyleBackColor = true;
@@ -206,9 +220,10 @@
             // 
             // openCamera
             // 
-            openCamera.Location = new Point(167, 84);
+            openCamera.Location = new Point(1100, 296);
+            openCamera.Margin = new Padding(3, 4, 3, 4);
             openCamera.Name = "openCamera";
-            openCamera.Size = new Size(115, 37);
+            openCamera.Size = new Size(131, 49);
             openCamera.TabIndex = 13;
             openCamera.Text = "Open Camera";
             openCamera.UseVisualStyleBackColor = true;
@@ -216,9 +231,10 @@
             // 
             // button1
             // 
-            button1.Location = new Point(167, 428);
+            button1.Location = new Point(182, 103);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(115, 37);
+            button1.Size = new Size(131, 49);
             button1.TabIndex = 14;
             button1.Text = "Snapshot";
             button1.UseVisualStyleBackColor = true;
@@ -226,9 +242,9 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1114, 974);
+            ClientSize = new Size(1273, 1055);
             Controls.Add(button1);
             Controls.Add(openCamera);
             Controls.Add(loadBackground);
@@ -245,6 +261,7 @@
             Controls.Add(pictureBox1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
             menuStrip1.ResumeLayout(false);
